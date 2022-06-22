@@ -2,80 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="cal.css">
 </head>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #ddd;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  #header{
-    text-align: center;
-    font-size: 40px;
-    margin: 20px;
-  }
- 
-  .topnav {
-    overflow: hidden;
-    background-color: rgb(36, 36, 44);
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  .main{
-      border-radius: 15px;
-      margin: 20px;
-      height: fit-content;
-      margin-left: 40%;
-      width: fit-content;
-      padding: 10px;
-      background-color: rgb(31, 38, 46);
-  }
-  #display{
-      background-color: white;
-      text-align: right;
-      font-size: 40px;
-      border: solid white 25px;
-      
-  }
-  .buttons button{
-      border: solid white;
-      border-radius: 8px;
-      height: 50px;
-      width: 40px;
-    font-size: 35px;
-    margin: 5px;
-    padding: 5px;
-  }
-#clear{
-  background-color: rgb(255, 169, 40);
-  border: none;
-}
-#top{
-  padding-top: 0px;
-}
-</style>
 <body>
 <p id="header">CALCULATOR</p>
 <div class="topnav">
-  <a href="">Home</a>
+  <a href="Home.html">Home</a>
   <a class="active" id="A" href="">Standard</a>
   <a href="">Scientific</a>
   <a href="">Graph</a>
@@ -113,19 +45,4 @@
 
 </body>
 </html>
-<script>
-  var x="";
-function addTox(a){
-    x+=a;
-    document.getElementById("display").innerText=x;
-}
-function cLear(){
-    x='';
-    document.getElementById("display").innerText=x;
-}
-function delTox(){
-    let length=x.length;
-    x=x.substr(0,length-1);
-    document.getElementById("display").innerText=x;
-}
-</script>
+<script src="ca.js"></script>
